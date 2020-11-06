@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+let notifications = [
+{message: 'Lorem', read: true},
+{message: 'Ipsum', read: true},
+{message: 'Dolor', read: true},
+{message: 'Sit'  , read: false},
+{message: 'Amet' , read: true}
+];
+
+let allRead = true;
+
+allRead = !notifications.some(({read})=>!read);
+document.write(allRead);
+
+
+  </script>
+</body>
+</html>
